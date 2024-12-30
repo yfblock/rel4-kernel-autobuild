@@ -9,6 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: yfblock/rel4-base:0.1
+      volumes:
+        - .:/work
     steps:
       - uses: actions/checkout@v4
       - run: ./build.sh
