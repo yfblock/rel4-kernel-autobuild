@@ -10,4 +10,5 @@ jobs:
     container:
       image: yfblock/rel4-base:0.1
     steps:
-      - run: pip --help
+      - uses: actions/checkout@v4
+      - run: ./build.sh
