@@ -26,6 +26,6 @@ jobs:
       #     workdir: build 
       - uses: actions/upload-artifact@v4
         with:
-          name: TestUploadArtifact
+          name: New release
           path: |
             build/seL4
