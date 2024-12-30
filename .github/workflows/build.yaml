@@ -7,5 +7,8 @@ on:
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
+    container:
+      image: '../../Dockerfile'
     steps:
       - run: echo 'Hello World!'
+      - run: pip --help
