@@ -12,4 +12,4 @@ jobs:
       - name: Build Environments
         run: sudo apt install docker
       - run: docker build --build-arg UID=`id -u` --build-arg GID=`id -g` -t auto-build .
-      - run: docker run -d --name rel4-autobuild -v .:/work:z rel4-auto-build bash ./build.sh
+      - run: docker run -d --name rel4-autobuild -v .:/work:z auto-build bash ./build.sh
