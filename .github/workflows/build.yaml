@@ -56,6 +56,6 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           name: TestRelease
-          tag_name: Test TagName
+          tag_name: v1.0.0
           files: |
             seL4.tar.gz
