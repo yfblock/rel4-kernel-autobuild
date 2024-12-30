@@ -54,7 +54,6 @@ jobs:
         run: tar cvzf seL4.tar.gz build/seL4
       - name: Release
         uses: softprops/action-gh-release@v2
-        if: startsWith(github.ref, 'refs/tags/')
         with:
           files: |
             seL4.tar.gz
