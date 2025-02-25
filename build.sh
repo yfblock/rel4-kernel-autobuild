@@ -22,6 +22,7 @@ cmake \
     -DKernelPlatform=qemu-arm-virt \
     -DKernelArmHypervisorSupport=ON \
     -DKernelVerificationBuild=OFF \
+    -DKernelAllowSMCCalls=ON \
     -DARM_CPU=cortex-a57 \
     -G Ninja \
     -S . \
