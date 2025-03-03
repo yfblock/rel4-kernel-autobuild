@@ -8,8 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Build Environments
-        run: sudo apt install docker.io
+      # - name: Build Environments
+      #   run: sudo apt install docker.io
       - name: Build Docker Image
         run: docker build --build-arg UID=`id -u` --build-arg GID=`id -g` -t auto-build .
       - name: Build files in the container
