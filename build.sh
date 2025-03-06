@@ -20,6 +20,7 @@ cmake \
     -DCROSS_COMPILER_PREFIX=aarch64-linux-gnu- \
     -DCMAKE_INSTALL_PREFIX=${SEL4_INSTALL_DIR} \
     -DKernelPlatform=qemu-arm-virt \
+    -DKernelArmExportPCNTUser=ON \
     -DKernelArmHypervisorSupport=ON \
     -DKernelVerificationBuild=OFF \
     -DKernelAllowSMCCalls=ON \
