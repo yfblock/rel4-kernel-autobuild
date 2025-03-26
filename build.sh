@@ -21,6 +21,7 @@ cmake \
     -DCMAKE_INSTALL_PREFIX=${SEL4_INSTALL_DIR} \
     -DKernelPlatform=qemu-arm-virt \
     -DKernelArmExportPCNTUser=ON \
+    -DKernelArmExportPTMRUser=ON \
     -DKernelArmHypervisorSupport=ON \
     -DKernelVerificationBuild=OFF \
     -DKernelAllowSMCCalls=ON \
